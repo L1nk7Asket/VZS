@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Гостевой дом "Волжанин"</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="img/Favi/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/Favi/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/Favi/favicon-16x16.png">
+<link rel="manifest" href="img/Favi/site.webmanifest">
+<link rel="mask-icon" href="img/Favi/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!--
+
+Tooplate 2095 Level
+
+https://www.tooplate.com/view/2095-level
+
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" href="css/tooplate-style.css">                                   <!-- Templatemo style -->
+    <link rel="stylesheet" href="css/Foto1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+
+    <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>
+            <div class="tm-top-bar" id="tm-top-bar">
+                <!-- Top Navbar -->
+                <div class="container">
+                    <div class="row">
+                        
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img src="img/logo4.png" alt="Site logo">
+                                Волжанин
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#top">Главная <span class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-4">Обзор местности</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-7">Фотографии</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-11">О нас</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-6">Где находимся</a>
+                                  </li>
+                                </ul>
+                            </div>                            
+                        </nav>            
+                    </div>
+                </div>
+            </div>
+            <div class="tm-section tm-bg-img" id="tm-section-1">
+                <div class="tm-bg-white ie-container-width-fix-2">
+                    <div class="container ie-h-align-center-fix">
+                        <div class="row">
+                            <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+                                <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                    <div class="form-row tm-search-form-row">
+                                        <div class="form-group tm-form-element tm-form-element-100">
+                                            <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+                                            <input name="city" type="text" class="form-control" id="inputCity" placeholder="От куда вы...">
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-50">
+                                            <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                            <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="С какого числа">
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-50">
+                                            <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                            <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="По какое число">
+                                        </div>
+                                    </div>
+                                    <div class="form-row tm-search-form-row">
+                                        <div class="form-group tm-form-element tm-form-element-2">                                            
+                                            <select name="adult" class="form-control tm-select" id="adult">
+                                                <option value="">Взрослых</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                            <i class="fa fa-2x fa-user tm-form-element-icon"></i>
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-2">                                            
+                                            <select name="children" class="form-control tm-select" id="children">
+                                                <option value="">Детей</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                            <i class="fa fa-user tm-form-element-icon tm-form-element-icon-small"></i>
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-2">
+                                            <select name="room" class="form-control tm-select" id="room">
+                                                <option value="">Сколько комнат</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                            <i class="fa fa-2x fa-bed tm-form-element-icon"></i>
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-2">
+                                            <button type="submit" class="btn btn-primary tm-btn-search">==DEVOPS==Отправить заявку</button>
+                                        </div>
+                                      </div>
+                                      <div class="form-row clearfix pl-2 pr-2 tm-fx-col-xs">
+                                          <p class="tm-margin-b-0">Все ещё в разработке.</p>
+                                          <a href="#" class="ie-10-ml-auto ml-auto mt-1 tm-font-semibold tm-color-primary">Нужна помощь?</a>
+                                      </div>
+                                </form>
+                            </div>                        
+                        </div>      
+                    </div>
+                </div>                  
+            </div>
+            
+            <div class="tm-section-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h2 class="tm-section-title">Остались какие то вопросы?</h2>
+                            <p class="tm-color-white tm-section-subtitle">Пишите в наши соц - сети</p>
+                            <a href="https://www.kudanamore.ru/lazarevskoe/hotels/3402/" target="_blank" class="tm-color-white tm-btn-white-bordered">Больше информации</a>
+                        </div>                
+                    </div>
+                </div>        
+            </div>
+            
+            <div class="tm-section tm-position-relative">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="tm-section-down-arrow">
+                    <polygon fill="#4285B4" points="0,0  100,0  50,60"></polygon>                   
+                </svg> 
+                <div class="container tm-pt-5 tm-pb-4">
+                    <div class="row text-center">
+                        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">                            
+                            <i class="fa tm-fa-6x fa-umbrella tm-color-primary tm-margin-b-20"></i>
+                            <h3 class="tm-color-primary tm-article-title-1">Местный отдых</h3>
+                            <p>Прямо у нас на открытой крыше вы можете принимать солнечные ванны</p>
+                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Ссылка??...</a>
+                        </article>
+                        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">                            
+                            <i class="fa tm-fa-6x fa-plane tm-color-primary tm-margin-b-20"></i>
+                            <h3 class="tm-color-primary tm-article-title-1">Личная встреча</h3>
+                            <p>За дополнительную плату встретим и проводим вас лично на вокзале\аэропорту.</p>
+                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Ссылка??...</a>                            
+                        </article>
+                        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">                           
+                            <i class="fa tm-fa-6x fa-vine tm-color-primary tm-margin-b-20"></i>
+                            <h3 class="tm-color-primary tm-article-title-1">Местные напитки</h3>
+                            <p>Покажем, расскажем и дадим на пробу местные напитки.</p>
+                            <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Ссылка??...</a>                           
+                        </article>
+                    </div>        
+                </div>
+            </div>
+            
+            <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                            <div class="tm-article-carousel">                            
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/Kol.jpg" alt="Image" class="img-fluid">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">Парк отдыха</h3></header>
+                                        <p>Море морем, но не всегда хочется весь день проводить в воде. Отпуск на то и отпуск, чтобы отрываться и отдыхать так, как не можешь себе позволить в обычные будни. Потому, если нужно будет отдохнуть от моря, то можно посетить парк с аттракционами, густой зеленью.</p>
+                                        <a href="https://kstrip.ru/nashi-priklyucheniya/rossiya/sochi/park-kultury-i-otdyxa-v-lazarevskom/" class="text-uppercase btn-primary tm-btn-primary" target="_blank" >Узнать больше</a>
+                                    </div>                                
+                                </article>                    
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/Gor.jpg" alt="Image" class="img-fluid">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">Аквапарки</h3></header>
+                                        <p>У нас в городе на выбор есть 2 не маленьких аквапарка, они подходят как для детей, так и для взрослых. Если будут вопросы, мы с раздостью проконсультируем вас, какой выбрать лучше и где выгоднее всего купить билеты.</p>
+                                        <a href="https://yandex.ru/maps/114799/lazarevsky-city-district/category/water_park/184106350/?ll=39.332863%2C43.911018&sctx=ZAAAAAgBEAAaKAoSCVu1a0Jay0NAEYF6M2q%2B3EVAEhIJn%2BQOm8jM4j8ReV2%2FYDds2T8iBgABAgMEBSgKOABA9lVIAWISbGV0b192X2dvcm9kZT10cnVlagJydZ0BzcxMPaABAKgBAL0ByQs1YMIBEPGbseEs3re0y5cG4bzk0DHqAQDyAQD4AQCCAhdjYXRlZ29yeV9pZDooMTg0MTA2MzUwKYoCCTE4NDEwNjM1MJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=39.332863%2C43.911018&sspn=0.038780%2C0.015922&z=16.2" class="text-uppercase btn-primary tm-btn-primary" target="_blank" >Посмотреть на карте</a>
+                                    </div>                                
+                                </article>
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/Del.jpg" alt="Image" class="img-fluid">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">Дельфинарий</h3></header>
+                                        <p>Шоу с участием семейства черноморских дельфинов-афалин, котиков, морской львицы и полярных белых китов. Находится рядом с аквапарком.</p>
+                                        <a href="https://www.delphinoterapiya.ru/" class="text-uppercase btn-primary tm-btn-primary" target="_blank">Узнать больше</a>
+                                    </div>                                
+                                </article>
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/CN.jpg" alt="Image" class="img-fluid">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">Культурный отдых</h3></header>
+                                        <p>По вечерам, каждый день, на площади ЦНК проводятся тематические кудьтурные развлечения. Так же там вы можете найти билеты на разные концерты.</p>
+                                        <a href="https://lazarevskiy-rcnk.ru/" class="text-uppercase btn-primary tm-btn-primary" target="_blank">Подробнее</a>
+                                    </div>                                
+                                </article>
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/KR.jpg" alt="Image" class="img-fluid">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">Туры</h3></header>
+                                        <p>Если вы хотите провести свой отдых более активно, то можем посоветовать вам экскурсии, конные прогулки, катание на квадроциклах, полёт на воздушном шаре в Лазаревском и т.д.</p>
+                                        <a href="https://lazarevskoe.plus/offer" class="text-uppercase btn-primary tm-btn-primary" target="_blank">Посмотреть больше.</a>
+                                    </div>                                
+                                </article>                    
+                                
+                                <article class="tm-bg-white tm-carousel-item">
+                                    <img src="img/KT.jpg" alt="Image" class="img-fluid">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">Кинотеатр</h3></header>
+                                        <p>Во время вашего отдыха выходит долгоожидаемы фильм или вы киноман? Не беда, у нас есть скромный, но хороший кинотеатр.</p>
+                                        <a href="http://kino-laz.ru/" class="text-uppercase btn-primary tm-btn-primary" target="_blank">Афиша</a>
+                                    </div>                                
+                                </article>
+                            </div>    
+                        </div>
+                        
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
+                            <div class="tm-bg-white">
+                                <div class="tm-bg-primary tm-sidebar-pad">
+                                    <h3 class="tm-color-white tm-sidebar-title">Рекомендуемые места</h3>
+                                    <p class="tm-color-white tm-margin-b-0 tm-font-light">Даем свои личные рекомендации, куда стоит пойти, если вы в первый раз у нас</p>
+                                </div>
+                                <div class="tm-sidebar-pad-2">
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/KA1.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Каменный пляж</h4>
+                                        </div>                                        
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/RI1.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Речка</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/KAN1.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Кальянные на берегу моря</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item">
+                                        <img src="img/TC1.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Торговые центры</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+          <!--  <div class="container">
+                
+                <h1> Галерея </h1>
+
+                <div class="img-container">
+                    <div class="img">
+                        <img src="img/Gal/11.jpg" alt="">
+                    </div>
+
+                    <div class="img">
+                        <img src="img/Gal/22.jpg" alt="">
+                    </div>
+
+                    <div class="img">
+                        <img src="img/Gal/33.jpg" alt="">
+                    </div>
+                    
+                    <div class="img">
+                        <img src="img/Gal/44.jpg" alt="">
+                    </div>
+
+                    <div class="img">
+                        <img src="img/Gal/55.jpg" alt="">
+                    </div>
+                </div>               
+                
+                <div class="pop-up">
+                    <span class="pop-up">&times;</span>
+                    <img src="img/Gal/44.jpg">
+                 </div>
+
+            </div> -->
+<div class="tm-section" id="tm-section-7">
+ <section class="gallery">
+    <h2 class="title">Галерея</h2>
+    <div class="gallery-list">
+      <a href="img/Gal/11.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/Gal/11.jpg" alt="alt">
+      </a>
+      <a href="img/Gal/22.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/Gal/22.jpg" alt="alt">
+      </a>
+      <a href="img/Gal/33.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/Gal/33.jpg" alt="alt">
+      </a>
+      <a href="img/Gal/44.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/Gal/44.jpg" alt="alt">
+      </a>
+      <a href="img/Gal/55.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/Gal/55.jpg" alt="alt">
+      </a>
+      <a href="img/Gal/66.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/Gal/66.jpg" alt="alt">
+      </a>
+      <a href="img/Gal/77.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/Gal/77.jpg" alt="alt">
+      </a>
+      <a href="img/Gal/88.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/Gal/88.jpg" alt="alt">
+      </a>
+    </div>
+  </section> 
+    </div>
+            <div class="tm-bg-video">
+                <div class="overlay">
+                    <i class="fa fa-5x fa-play-circle tm-btn-play"></i>
+                    <i class="fa fa-5x fa-pause-circle tm-btn-pause"></i>
+                </div>
+                <video controls="controls autoplay" loop="" class="tmVideo">
+                    <source src="videos/vid2.mp4" type="video/mp4">
+                    <source src="videos/vid2.ogg" type="video/ogg">
+                    Ваш браузер не поддерживает данное видео.
+                </video>
+                <div class="tm-section tm-section-pad tm-bg-img" id="tm-section-11" >                                                        
+                    <div class="container ie-h-align-center-fix">
+                        <div class="row tm-flex-align-center">
+                            <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 tm-media-title-container">
+                                <h2 class="text-uppercase tm-section-title-2">СОЧИ</h2>
+                                <h3 class="tm-color-primary tm-font-semibold tm-section-subtitle-2">Лазаревское</h3>
+                            </div>
+                            <div class="col-xs-12 col-md-12 col-lg-9 col-xl-9 mt-0 mt-sm-3">
+                                <div class="ml-auto tm-bg-white-shadow tm-pad tm-media-container">
+                                    <article class="media tm-margin-b-20 tm-media-1">
+                                        <img src="img/NA1.jpg" alt="Image">
+                                        <div class="media-body tm-media-body-1 tm-media-body-v-center">
+                                            <h3 class="tm-font-semibold tm-color-primary tm-article-title-3">Добрый день!</h3>
+                                            <font color="black" size="3">Приезжайте чаще к нам, рады мы всегда гостям!!! У нас красиво и уютно — Вам понравится!!!
+Мы предлагаем однокомнатные и двухкомнатные номера, которые созданы с особой любовью и заботой о Вас! Тишина, чистота и порядок в них Вам обеспечены! В просторных номерах, в распоряжении гостей, имеются телевизор, холодильник, кондиционер, кровати с удобными матрасами. Бесплатный Wi-Fi работает отлично в любое время суток в каждом номере.
+Смотровая площадка зовет и манит понежиться в шезлонге, принять солнечные ванны и полюбоваться видом на горы с террасы! 
+                                            <br><br>
+                                            Все условия для стирки, сушки, глажки одежды. Для сушки белья и купальников есть просторная сушилка.
+                                            <br><br>
+											Высота над уровнем моря 1 метр. Расстояние до берега моря 600 метров. Это 10 минут ходьбы по равнине. Пляж галечный, чистый, бесплатный.
+Путь к морю идет через парк культуры и отдыха, где множество экзотической растительности и аттракционов для взрослых и детей. В шаговой доступности аквапарк «Наутилус», магазины, столовые, кафе, рынки, центр национальных культур, фонтаны.
+В доме предусмотрено самостоятельное приготовление пищи на общей кухне, оборудованной всем необходимым инвентарем. Есть мангал для шашлыков.</font>
+                                        </div>                                
+                                    </article>
+                                    <article class="media tm-margin-b-20 tm-media-1">
+                                        <img src="img/MO1.jpg" alt="Image">
+                                        <div class="media-body tm-media-body-1 tm-media-body-v-center">
+                                            <h3 class="tm-font-semibold tm-article-title-3">Про цены</h3>
+                                            <font color="black" size="3">Стоимость проживания указана за номер в сутки. Полный расчет производится при заселении.
+Цена за проживание является динамической и может меняться. Уточняйте.
+Забронировать номер возможно через сайт или по телефону.
+При гарантированном бронировании взимается предоплата за сутки проживания.
+При отмене бронирования, предоплата возвращается в полном объёме, том случае, если на эти сроки номер будет забронирован другими, в противном случае предоплата не возвращается. Не разрешено: с домашними животными, в номерах курить запрещено, охраняемая территория.
+После 23:00 шуметь запрещено.</font>
+                                            <!-- <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a> -->
+                                        </div>                                
+                                    </article>
+                                    <article class="media tm-margin-b-20 tm-media-1">
+                                        <img src="img/OT1.jpg" alt="Image">
+                                        <div class="media-body tm-media-body-1 tm-media-body-v-center">
+                                            <h3 class="tm-font-semibold tm-article-title-3">Правила и удобства</h3>
+                                            <font color="black" size="3">Что у нас есть:
+<li> Прачечная : 100 руб </li>
+
+<li>Место для отдыха : терраса на крыше с шезлонгами</li>
+
+<li>Интернет в номерах : бесплатно, WI-FI в каждом номере и в общих зонах</li>
+
+<li>Мангал : во дворе, бесплатно</li>
+
+<li>Кухня : для самостоятельного приготовления</li>
+
+<li>Встреча на ж/д вокзале : бесплатно</li>
+
+<li>Встреча в аэропорту : за отдельную плату</li>
+
+Правила проживания:
+
+<li> Время заезда: 14:00</li> 
+
+<li> Время выезда: 12:00</li> 
+
+<li> Принимаем с детьми: с 3 лет</li> 
+
+<li> Проживание с животными: Запрещено</li> 
+
+<li> Курение на территории: Разрешено в специальных местах</li> 
+
+<li> Тихие часы когда нельзя шуметь 22:00 - 09:00</li> </font>
+                                            <!-- <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a> -->
+                                        </div>                                
+                                    </article>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+            
+            <div class="tm-section tm-section-pad tm-bg-img tm-position-relative" id="tm-section-6">
+                <div class="container ie-h-align-center-fix">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-7">
+                            <div id="google-map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d277.06670800667047!2d39.336107352009314!3d43.907857660282914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f4199c256b15a1%3A0xe815690ac7ad1c54!2sGuest%20House%20Volzhanin!5e0!3m2!1sru!2sru!4v1689751934764!5m2!1sru!2sru" width="600" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>        
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-5 mt-3 mt-md-0">
+                            <div class="tm-bg-white tm-p-4">
+                                <form action="index.html" method="post" class="contact-form">
+                                    <div class="form-group">
+                                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary tm-btn-primary"> ==ПОКА ЧТО В РАЗРАБОТКЕ== Send Message Now</button>
+                                </form>
+                            </div>                            
+                        </div>
+                    </div>        
+                </div>
+            </div>
+            
+            <footer class="tm-bg-dark-blue">
+                <div class="container">
+                    <div class="row">
+                        <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
+                        Как с нами связаться: +7 (918) 917-69-99 или можете написать в &#9990; WhatsApp и   &#9990; Viber</p>        
+                    </div>
+                </div>                
+            </footer> 
+        </div>
+        
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+        <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+        <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+        <script>
+
+            /* Google map
+            ------------------------------------------------*/
+            var map = '';
+            var center;
+
+            function initialize() {
+                var mapOptions = {
+                    zoom: 13,
+                    center: new google.maps.LatLng(43.907932, 39.335827),
+                    scrollwheel: false
+                };
+
+                map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+                google.maps.event.addDomListener(map, 'idle', function() {
+                  calculateCenter();
+              });
+
+                google.maps.event.addDomListener(window, 'resize', function() {
+                  map.setCenter(center);
+              });
+            }
+
+            function calculateCenter() {
+                center = map.getCenter();
+            }
+
+            function loadGoogleMap(){
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+                document.body.appendChild(script);
+            } 
+
+            function setCarousel() {
+                
+                if ($('.tm-article-carousel').hasClass('slick-initialized')) {
+                    $('.tm-article-carousel').slick('destroy');
+                } 
+
+                if($(window).width() < 438){
+                    // Slick carousel
+                    $('.tm-article-carousel').slick({
+                        infinite: false,
+                        dots: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    });
+                }
+                else {
+                 $('.tm-article-carousel').slick({
+                        infinite: false,
+                        dots: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    });   
+                }
+            }
+
+            function setPageNav(){
+                if($(window).width() > 991) {
+                    $('#tm-top-bar').singlePageNav({
+                        currentClass:'active',
+                        offset: 79
+                    });   
+                }
+                else {
+                    $('#tm-top-bar').singlePageNav({
+                        currentClass:'active',
+                        offset: 65
+                    });   
+                }
+            }
+
+            function togglePlayPause() {
+                vid = $('.tmVideo').get(0);
+
+                if(vid.paused) {
+                    vid.play();
+                    $('.tm-btn-play').hide();
+                    $('.tm-btn-pause').show();
+                }
+                else {
+                    vid.pause();
+                    $('.tm-btn-play').show();
+                    $('.tm-btn-pause').hide();   
+                }  
+            }
+       
+            $(document).ready(function(){
+
+                $(window).on("scroll", function() {
+                    if($(window).scrollTop() > 100) {
+                        $(".tm-top-bar").addClass("active");
+                    } else {
+                        //remove the background property so it comes transparent again (defined in your css)
+                       $(".tm-top-bar").removeClass("active");
+                    }
+                });      
+
+                // Google Map
+               // loadGoogleMap();  
+
+                // Date Picker
+                const pickerCheckIn = datepicker('#inputCheckIn');
+                const pickerCheckOut = datepicker('#inputCheckOut');
+                
+                // Slick carousel
+                setCarousel();
+                setPageNav();
+
+                $(window).resize(function() {
+                  setCarousel();
+                  setPageNav();
+                });
+
+                // Close navbar after clicked
+                $('.nav-link').click(function(){
+                    $('#mainNav').removeClass('show');
+                });
+
+                // Control video
+                $('.tm-btn-play').click(function() {
+                    togglePlayPause();                                      
+                });
+
+                $('.tm-btn-pause').click(function() {
+                    togglePlayPause();                                      
+                });
+
+                // Update the current year in copyright
+                $('.tm-current-year').text(new Date().getFullYear());                           
+            });
+
+        </script>    
+
+     <!--   <script>
+
+        document.querySelectorAll('.img-container img').forEach(img =>{
+            img.onclick = () => {
+                document.querySelector('.pop-up').style.display = 'block';
+                document.querySelector('.pop-up img').src = img.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.pop-up span').onclick = () => {
+            document.querySelector('.pop-up').style.display = 'none'; 
+        }
+
+    </script> -->
+             
+ <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script>
+    $(".gallery-list").magnificPopup({
+      delegate: "a",
+      type: "image",
+      gallery: {
+        enabled: true
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
+
